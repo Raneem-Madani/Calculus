@@ -1,0 +1,52 @@
+\documentclass[12pt,fleqn]{book} 
+\input{structure.tex}
+\begin{document}
+%----------------------------------------------------------------------------------------
+\begingroup
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{background.pdf}};
+\draw (current page.center) node [fill=smalt(darkpowderblue)!40!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Calculus III\\[15pt] % Book title
+{\Large Calculus Early Transcendental 6th edition}\\[20pt] % Subtitle
+{\huge Dr. Muath Karaki}}}; % Author name
+\end{tikzpicture}
+\vfill
+\endgroup
+\newpage
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+~\vfill
+\thispagestyle{empty}
+\begin{minipage}{0.25\textwidth}
+\includegraphics[width=3cm]{n.jpg}
+\end{minipage}
+\begin{minipage}{0.7\textwidth}
+{\huge An-Najah National University}\\
+{\large Department of Mathematics}\\
+{\Large Calculus III}\\
+4C's Rule:\begin{itemize}
+    \item Communication
+    \item Collaboration
+    \item Creativity
+    \item Critical Thinking
+\end{itemize}
+\end{minipage}\\ \\
+{\Large Muath Karaki}\\
+Email:~~~~~~~~~~~~~~~~~~~~~muath.karaki@najah.edu\\
+Website:~~~~~~~~~~~~~~~~~~staff.najah.edu/en/profiles/2704\\
+Office:~~~~~~~~~~~~~~~~~~~~14F1460\\
+Office hours:~~~~~~~~~~~See zajel
+\newpage
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%------------------------------------------------------------------------
+\chapterimage{3.pdf}
+\pagestyle{empty}
+\tableofcontents 
+\cleardoublepage 
+\pagestyle{fancy}
+\part{Part One}
+%---------------------------------CHAPTER---------------------------------------------------------------------------------------------------------
+\input{1book.tex}
+\end{document}
